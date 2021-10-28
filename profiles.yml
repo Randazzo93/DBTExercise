@@ -1,5 +1,6 @@
 salesloft-exercise:
   target: dev
+  #target: prod
   outputs:
     dev:
       type: bigquery
