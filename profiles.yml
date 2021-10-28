@@ -6,3 +6,10 @@ salesloft-exercise:
       method: oauth
       dataset: salesloftexercise
       threads: 4
+  target: prod
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      dataset: salesloftexercise
+      threads: 4
