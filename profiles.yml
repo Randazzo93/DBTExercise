@@ -1,0 +1,8 @@
+salesloft-exercise:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      dataset: salesloftexercise
+      threads: 4

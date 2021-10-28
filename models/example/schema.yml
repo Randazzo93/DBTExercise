@@ -1,0 +1,20 @@
+
+version: 2
+
+sources:
+  - name: raw_stackoverflow
+    database: bigquery-public-data
+    schema: stackoverflow
+    tables:
+      - name: posts_questions
+      - name: users
+
+models:
+    - name: UnawnseredQuestions
+      description: "Used to analyze data for Unawnsered Questions in Stack OverFlow"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
