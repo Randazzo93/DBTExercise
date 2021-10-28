@@ -4,7 +4,7 @@ salesloft-exercise:
     dev:
       type: bigquery
       method: oauth
-      dataset: salesloftexercise
+      dataset: dev-environment-2
       threads: 4
   target: prod
   outputs:
