@@ -2,7 +2,7 @@
 
 {{
     config(
-      target_database='snapshots-db',
+      target_database='snapshot-db',
       target_schema='UnawnseredQuestions',
       unique_key='id',
 
