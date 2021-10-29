@@ -2,13 +2,12 @@
 
 {{
     config(
-      target_database='snapshot-db',
+      target_database='UnawnseredQuestions',
       target_schema='UnawnseredQuestions',
-      unique_key='id',
-
       strategy='check',
+      unique_key='id',
       check_cols='all',
-      invalidate_hard_deletes = True
+      invalidate_hard_deletes = True,
     )
 }}
 
