@@ -2,7 +2,7 @@
 
 {{
     config(
-      target_database='UnawnseredQuestions',
+      target_database='sales-loft-exercise',
       target_schema='snapshot',
       strategy='check',
       unique_key='id',
