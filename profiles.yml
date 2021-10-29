@@ -5,12 +5,12 @@ salesloft-exercise:
     dev:
       type: bigquery
       method: oauth
-      dataset: dev-environment-2
+      dataset: sales-loft-exercise
       threads: 4
   target: prod
   outputs:
     dev:
       type: bigquery
       method: oauth
-      dataset: salesloftexercise
+      dataset: sales-loft-exercise
       threads: 4
