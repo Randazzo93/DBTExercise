@@ -30,7 +30,7 @@ FROM {{ source('raw_stackoverflow', 'posts_questions')}} AS PQ
 
 WHERE PQ.answer_count = 0 
 
-LIMIT 10
+LIMIT 1
 )
 
 select *
