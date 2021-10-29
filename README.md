@@ -7,6 +7,10 @@ Mini pipeline project using DBT cloud, bigquery, and stack overflows public DB.
 * run test on table for unique primary key and no null primary key
 * create snapshot to keep track of all changes in the table for future analysis
 
+## Diagram
+
+![ModelDiagram](https://user-images.githubusercontent.com/87403512/139498376-803d3564-e0c2-442a-b55c-78c62dcd1182.PNG)
+
 ## DBT Commands
 
 Try running the following commands:
