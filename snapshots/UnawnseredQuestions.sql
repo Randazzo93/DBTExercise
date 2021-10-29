@@ -3,7 +3,7 @@
 {{
     config(
       target_database='UnawnseredQuestions',
-      target_schema='UnawnseredQuestions',
+      target_schema='snapshot',
       strategy='check',
       unique_key='id',
       check_cols='all',
