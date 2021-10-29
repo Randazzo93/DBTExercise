@@ -25,6 +25,16 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "dbt_modules"
 
 
+# snapshots:
+#   DBT_SalesLoft_Exercise:
+#       UnawnseredQuestions_snapshot:
+#         +target_schema: 'snapshot-db'
+#         +target_database: 'UnawnseredQuestions'
+#         +unique_key: id
+#         +strategy: check
+#         +check_cols: all
+#         +invalidate_hard_deletes: true
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -32,7 +42,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  DBT_SalesLoft_Exercise:
-      # Applies to all files under models/example/
-      UnawnseredQuestions:
-          materialized: table
+    example:
+        DBT_SalesLoft_Exercise:
+            # Applies to all files under models/example/
+            UnawnseredQuestions:
+                materialized: table

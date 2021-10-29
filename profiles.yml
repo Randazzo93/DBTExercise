@@ -1,8 +1,16 @@
 salesloft-exercise:
   target: dev
+  #target: prod
   outputs:
     dev:
       type: bigquery
       method: oauth
-      dataset: salesloftexercise
+      dataset: sales-loft-exercise
+      threads: 4
+  target: prod
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      dataset: sales-loft-exercise
       threads: 4

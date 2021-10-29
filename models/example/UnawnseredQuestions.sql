@@ -15,6 +15,8 @@ SELECT
    ,PQ.creation_date
    ,PQ.tags
    ,PQ.owner_user_id
+   ,PQ.view_count
+   ,PQ.score
    ,U.display_name
    ,U.age
    ,U.reputation
@@ -28,7 +30,7 @@ FROM {{ source('raw_stackoverflow', 'posts_questions')}} AS PQ
 
 WHERE PQ.answer_count = 0 
 
-LIMIT 10
+LIMIT 1
 )
 
 select *
