@@ -15,6 +15,8 @@ SELECT
    ,PQ.creation_date
    ,PQ.tags
    ,PQ.owner_user_id
+   ,PQ.view_count
+   ,PQ.score
    ,U.display_name
    ,U.age
    ,U.reputation
