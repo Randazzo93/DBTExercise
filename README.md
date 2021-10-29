@@ -3,7 +3,7 @@ Mini pipeline project using DBT cloud, bigquery, and stack overflows public DB.
 
 ## Process
 * Create a query that ranks score (trending) and views (popularity) for post that are questions with zero answers
-* Set up enviorment for Dev and Prod to make identify changes in dev before making live in prod
+* Set up enviorment for Dev and Prod to identify changes in dev before making live in prod
 * run test on table for unique primary key and no null primary key
 * create snapshot to keep track of all changes in the table for future analysis
 
