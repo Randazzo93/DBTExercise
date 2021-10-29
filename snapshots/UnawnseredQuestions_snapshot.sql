@@ -2,8 +2,8 @@
 
 {{
     config(
-      target_database='snapshots-table',
-      target_schema='snapshots',
+      target_database='snapshots-db',
+      target_schema='UnawnseredQuestions',
       unique_key='id',
 
       strategy='check',
